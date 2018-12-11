@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Personal Site of Nikolaos Karianakis.
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="keywords" content="deep learning, invariance, nuisances, UCLA, computer vision, machine learning, convolutional neural networks" />
+<meta name="description" content="deep learning, invariance, nuisances, UCLA, computer vision, machine learning, convolutional neural networks" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<title>Projects - CNN nuisances</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58737375-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div id="header">
+	<div id="logo">
+		<h1><a href="#">nikolaos karianakis</a></h1>
+	</div>
+    </div>
+	<!-- end #header -->
+
+    <div id="menu">
+	<ul>
+		<li><a href="http://vision.ucla.edu/~nick/">Home</a></li>
+          	<li class="active"><a href="#">Projects</a></li>
+            	<li><a href="http://vision.ucla.edu/~nick/contact/" title="contact">Contact</a></li>
+
+		<!--<li><a href="http://vision.ucla.edu/~nick/general-interests.html" title="general-interests">General Interests</a></li>-->
+	</ul>
+    </div>
+    <!-- end #menu -->
+
+    <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="project">
+			<div class="post">
+				<h1 class="h1"><a href="#">An Empirical Evaluation of Current Convolutional Architectures’ Ability to Manage 
+				Nuisance Location and Scale Variability</a></h3><br>
+
+				<div class="main_block">
+                                    <div class="inner_block">
+                                        <a href="http://cvpr2016.thecvf.com"><img src="../../images/CVPR_logo.png"></a>
+                                    </div><br><br>
+
+				    <div class="inner_block">
+				        <img src="../../images/karianakis.png">
+					<span class="caption1"><a href="http://vision.ucla.edu/~nick/">N. Karianakis</a></span>
+				    </div>
+
+				    <div class="inner_block">
+				        <img src="../../images/dong.png">
+					<span class="caption1"><a href="http://vision.ucla.edu/~jingming/">J. Dong</a></span>
+				    </div>
+
+                                    <div class="inner_block">
+                                        <img src="../../images/soatto.png">
+					<span class="caption1"><a href="http://web.cs.ucla.edu/~soatto/">S. Soatto</a></span>
+                                    </div><br>
+
+                                    <span class="caption2"><a href="http://vision.ucla.edu">UCLA Vision Lab</a></span>
+				</div>
+
+
+				<h3 class="title"><a href="#">Abstract</a></h3>
+				<div class="entry">
+					We conduct an empirical study to test the ability of convolutional neural networks (CNNs) to reduce 
+					the effects of nuisance transformations of the input data, such as location, scale and aspect ratio. 
+					We isolate factors by adopting a common convolutional architecture either deployed globally on the 
+					image to compute class posterior distributions, or restricted locally to compute class conditional 
+					distributions given location, scale and aspect ratios of bounding boxes determined by proposal heuristics. 
+					In theory, averaging the latter should yield inferior performance compared to proper marginalization. 
+					Yet empirical evidence suggests the converse, leading us to conclude that – at the current level of complexity
+					of convolutional architectures and scale of the data sets used to train them – CNNs are not very effective at 
+					marginalizing nuisance variability. We also quantify the effects of context on the overall classification task 
+					and its impact on the performance of CNNs, and propose improved sampling techniques for heuristic proposal schemes 
+					that improve end-to-end performance to state-of-the-art levels. We test our hypothesis on a classification task 
+					using the ImageNet Challenge benchmark and on a wide-baseline matching task using the Oxford and Fischer’s datasets.
+				</div>
+
+
+                                <h3 class="title"><a href="#">Code</a></h3>
+                                Download the source code as <a href="../../proj/cnn_nuisances/code.zip">[zip]</a> (45 KB)<br><br>
+
+
+                                <h3 class="title"><a href="#">Paper</a></h3>
+                                Full paper: <a href="../../papers/karianakisDS_CVPR16.pdf">[pdf]</a> (475 KB)<br><br>
+                                <div class="thumbs">
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page01.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page02.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page03.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page04.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page05.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page06.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page07.jpg" width="90"></a>
+                                        <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Karianakis_An_Empirical_Evaluation_CVPR_2016_paper.pdf"><img src="page08.jpg" width="90"></a>
+                                </div><br>
+
+                                Bibtex citation
+                                <div class="boxed">
+                                        @InProceedings{karianakisDS_2016_CVPR,<br>
+                                                &nbsp &nbsp &nbsp &nbsp author = {Karianakis, Nikolaos and Dong, Jingming and Soatto, Stefano},<br>
+                                                &nbsp &nbsp &nbsp &nbsp title = {An Empirical Evaluation of Current Convolutional Architectures’ Ability to Manage Nuisance Location and Scale Variability},<br>
+                                                &nbsp &nbsp &nbsp &nbsp booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition},<br>
+                                                &nbsp &nbsp &nbsp &nbsp month = {June},<br>
+                                                &nbsp &nbsp &nbsp &nbsp year = {2016}<br>
+                                        }
+                                </div><br>
+
+
+				<h3 class="title"><a href="#">Highlights</a></h3>
+					Convolutional neural networks (CNNs) are the de-facto paragon for detecting the presence of objects in a scene, 
+					as portrayed by an image. CNNs are described as being “approximately invariant” to nuisance transformations such 
+					as planar translation, both by virtue of their architecture (the same operation is repeated at every location akin 
+					to a “sliding window” and followed by local spatial pooling) and by virtue of their approximation properties that, given 
+					sufficient parameters and transformed training data, could in principle yield discriminants that are insensitive to 
+					nuisance transformations of the data represented in the training set.<br><br>
+
+					The fact that CNNs have been very successful in classifying images as containing a given object regardless of 
+					its position, scale, and aspect ratio <a href="#ref3">[3, 4]</a> suggests that the network can effectively manage such nuisance variability. 
+					In this paper we test this hypothesis, aiming to answer to the question: <i>How effective are current CNNs to reduce 
+					the effects of nuisance transformations of the input data, such as location and scaling?</i><br><br>
+
+					<b>First</b>, we test the hypothesis that eliminating the nuisances of location and scaling by providing the ground-truth 
+					bounding box for the object of interest will improve the classification accuracy. During our investigation we
+					observe the importance of another nuisance factor, which is the amount of background that is padded around the 
+					object of interest.<br><br>
+
+					In the following figure we show the top-1 and top-5 classification error in ImageNet 2014 as a function of the rim size 
+					for AlexNet <a href="#ref3">[3]</a> (left) and VGG16 <a href="#ref4">[4]</a> (right) architecture. 
+					A 0 rim size corresponds to the ground-truth bounding box, while 1 refers to the whole image. 
+					Performance decreases for AlexNet (which has top-5 error of 19.96%) to 20.41% when constrained to the ground-truth bounding boxes. 
+					This may seem surprising at first, but note that the restriction to bounding boxes does not just condition on the location-scale group, 
+					but also on visibility, as the image outside the bounding box is ignored. Thus, the slight decrease in performance measures the loss 
+					from discarding context by ignoring the image beyond the bounding box. On the other hand, a relatively small rim 
+					around the ground truth provides the best trade-off between context and clutter. It is interesting how quickly beyond 
+					a small rim the performance degrades.<br><br>
+				<img style="float: center;" src="alexNet-vgg16_width750.png"><br><br>
+
+				<div class="entry">
+					The <b>second</b> contribution concerns the proper sampling of the nuisance group. If we interpret the CNN restricted to 
+					a bounding box as a function that maps samples of the location-scale group to class-conditional distributions, 
+					where the proposal mechanism down-samples the group, then classical sampling theory teaches that we should 
+					retain not the value of the function at the samples, but its local average, a process known as <i>anti-aliasing</i>. 
+					In the next table we show that simple uniform averaging of 4 and 8 samples of the isotropic scale group 
+					(leaving location and aspect ratio constant) reduces the error to 15.96% and 14.43% respectively. Someone might expect 
+					that averaging conditional densities would produce less discriminative classifiers, but it is in line with recent developments 
+					concerning “domain-size pooling” <a href="#ref2">[2]</a>. Intuitively, averaging trades off discriminative power 
+					with insensitivity to nuisance variability.
+				</div>
+				<img style="float: margin-right;" src="table1.png"><br><br>
+
+				<div class="entry">
+					To test the effect of such anti-aliasing on a CNN absent the knowledge of ground truth object location, we test 
+					a domain-size pooled CNN in wide-baseline correspondence of regions selected by a generic low-level detector. 
+					Our <b>third</b> contribution is to show that this procedure improves the baseline CNN by 5–15% mean AP on standard 
+					benchmark datasets (comparisons with standard CNN and DSP-SIFT <a href="#ref2">[2]</a> in following plots).
+				</div>
+				<img style="float: center;" src="matching_width750.png"><br><br>
+
+				<div class="entry">
+					Our <b>fourth</b> contribution goes towards answering the question set forth in the preamble: We consider two popular 
+					baselines (AlexNet <a href="#ref3">[3]</a> and VGG16 <a href="#ref4">[4]</a>) that perform at the state-of-the-art 
+					in the ImageNet Classification challenge and introduce 
+					novel sampling and pruning methods, as well as an adaptively weighted marginalization based on the inverse R&eacute;nyi 
+					entropy. Now, if averaging the conditional class posteriors obtained with various sampling schemes should improve overall 
+					performance, that would imply that the implicit “marginalization” performed by the CNN is inferior to that obtained by 
+					sampling the group, and averaging the resulting class conditionals. This is indeed our observation, e.g., for VGG16, as 
+					we achieve an overall performance of 8.02%, compared to 13.24% when using the whole image (see table below). Our conclusion is 
+					that <i>at the current level of complexity of convolutional architectures and scale of the data sets used to train them – 
+					CNNs are not very effective at marginalizing nuisance variability.</i>
+				</div>
+				<img style="float: center;" src="table2.png"><br><br>
+
+				<div class="entry">
+					Our <b>fifth</b> contribution is to actually provide a method that performs at the state of the art in the ImageNet 
+					Classification challenge when using a single model. In the table above we provide various results and time complexity. 
+					We achieve a top-5 classification error of 15.82% and 8.02% for AlexNet and VGG16, compared to 17.55% and 8.85% error 
+					when they are tested with 150 regularly sampled crops as customary in the literature <a href="#ref4">[4]</a>, 
+					which corresponds to 9.9% and 9.4% relative error reduction, respectively. To set this in perspective, 
+					Krizhevsky et al. <a href="#ref3">[3]</a> report 16.4% top-5 error 
+					when they combine 5 models. We improve this performance using one single model. Data augmentation techniques such as 
+					scale jittering and an ensemble of several models could be deployed along with our method.
+				</div>
+
+				<div class="entry">
+					In the figure below (<b>left</b>) we show the top-5 error as a function of the number of proposals we average to produce the final posterior. 
+					Samples are generated with our algorithm and classified with AlexNet. The blue curve corresponds to selecting 
+					samples with the lowest-entropy posteriors. We compare our method with simple strategies such as random selection, ranking by largest-size 
+					or highest confidence of proposals. Empirically, the discriminative power of the classifier increases when the samples are selected 
+					with the least entropy criterion.<br>
+				</div>
+				<img style="float: center;" src="figs3-4.png"><br><br>
+
+				<div class="entry">
+					Regular and concentric crops assume that objects occupy most of the image or appear near the center. This is a known bias 
+					in the ImageNet dataset. To analyze the effect of adaptive sampling, we calculate the intersection over union error between the objects 
+					and the regular and concentric crops, and show in the figure above (<b>right</b>) the performance of various methods as a function 
+					of the IoU error. The improvement of using adaptive sampling (via proposals) over only regular and concentric crops increases 
+					as IoU error grows.
+				</div>
+
+
+				<h3 class="title"><a href="#">References</a></h3>
+				<div class="entry">
+					<h4 id="ref1"><b>1. An Empirical Evaluation of Current Convolutional Architectures' Ability to Manage Nuisance Location 
+					and Scale Variability.</b></h4>
+					N. Karianakis, J. Dong and S. Soatto.<br>
+                                        In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2016. [<a href="../../papers/karianakisDS_CVPR16.pdf">paper</a>,
+					<a href="../../posters/cvpr16poster_karianakisDS.pdf">poster</a>]<br><br>
+
+					<h4 id="ref2"><b>2. Domain-Size Pooling in Local Descriptors: DSP-SIFT.</b></h4>
+					J. Dong and S. Soatto.<br>
+					In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2015.<br><br>
+
+					<h4 id="ref3"><b>3. ImageNet classification with deep convolutional neural networks.</b></h4>
+					A. Krizhevsky, I. Sutskever, and G. E. Hinton.<br>
+					In Advances in Neural Information Processing Systems, December 2012.<br><br>
+
+					<h4 id="ref4"><b>4. Very deep convolutional networks for large-scale image recognition.</b></h4>
+					K. Simonyan and A. Zisserman.<br>
+					In International Conference on Learning Representations, May 2015.<br><br>
+
+					<h4 id="ref5"><b>5. Descriptor matching with convolutional neural networks: a comparison to SIFT.</b></h4>
+					P. Fischer, A. Dosovitskiy, and T. Brox.<br>
+					In arXiv preprint arXiv:1405.5769, 2014.<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+    </div>
+    <!-- end #page -->
+</div>
+</body>
+
+</html>
