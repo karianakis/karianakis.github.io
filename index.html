@@ -129,24 +129,24 @@ Personal Site of Nikolaos Karianakis.
 					/ <a href="./papers/DSP13_slides.pdf">slides</a>]<br><br>
 
 
-                                <h3 class="title"><a href="#">Theses</a></h3>
-                                <hr style="height:2px; visibility:hidden;" />
-                                <div class="entry">
-                                        N. Karianakis.<br>
-                                        <b>Sampling Algorithms to Handle Nuisances in Large-Scale Recognition.</b><br>
-                                        Ph.D. Dissertation, 2017 (University of California, Los Angeles) [<a href="./theses/phd_dissertation.pdf">pdf</a>]<br><br>
+				<h3 class="title"><a href="#">Theses</a></h3>
+				<hr style="height:2px; visibility:hidden;" />
+				<div class="entry">
+					N. Karianakis.<br>
+					<b>Sampling Algorithms to Handle Nuisances in Large-Scale Recognition.</b><br>
+					Ph.D. Dissertation, 2017 (University of California, Los Angeles) [<a href="./theses/phd_dissertation.pdf">pdf</a>]<br><br>
 
 					N. Karianakis.<br>
 					<b>Digital Restoration of Prehistoric Theran Wall Paintings.</b><br>
 					Diploma Thesis, 2011 (National Technical University of Athens) [<a href="./theses/thesis.pdf">pdf (in Greek)</a>]<br><br>
 
 
-                                <h3 class="title"><a href="#">Demos </a></h3>
+				<h3 class="title"><a href="#">Demos </a></h3>
 				<hr style="height:2px; visibility:hidden;" />
-                                <div class="entry">
+				<div class="entry">
 					J. Dong, X. Fei, N. Karianakis, K. Tsotsos and S. Soatto.<br>
-                                        <b>Visual-Inertial Scene Representations.</b><br>
-                                        CVPR demo session, June 2016 [<a href="./posters/cvpr16_demoPoster.pdf">poster</a>,
+					<b>Visual-Inertial Scene Representations.</b><br>
+					CVPR demo session, June 2016 [<a href="./posters/cvpr16_demoPoster.pdf">poster</a>,
 					<a href="https://www.youtube.com/watch?v=Rt2jdurowfE&feature=youtu.be">demo</a>]<br><br>
 
 
@@ -169,28 +169,25 @@ Personal Site of Nikolaos Karianakis.
 				<h3 class="title"><a href="#">Research Projects</a></h3>
 				<hr style="height:2px; visibility:hidden;" />
 				<div class="entry">
-					<b>Person Depth ReID: Robust Person Re-identification with Commodity Depth Sensors.</b> [<a href="./papers/karianakisLCS17.pdf">paper</a>]<br><br>
-                                        This work targets person re-identification (ReID) from depth sensors
-					such as Kinect. Since depth is invariant to illumination and less
-					sensitive than color to day-by-day appearance changes, a natural
-					question is whether depth is an effective modality for Person ReID,
-					especially in scenarios where individuals wear different colored
-					clothes or over a period of several months. We explore the use
-					of recurrent Deep Neural Networks for learning high-level shape
-					information from low-resolution depth images. In order to tackle
-					the small sample size problem, we introduce regularization and
-					a hard temporal attention unit. The whole model can be trained
-					end to end with a hybrid supervised loss. We carry out a thorough
-					experimental evaluation of the proposed method on three person
-					re-identification datasets, which include side views, views from
-					the top and sequences with varying degree of partial occlusion,
-					pose and viewpoint variations. To that end, we introduce a new
-					dataset with RGB-D and skeleton data. In a scenario where subjects
-					are recorded after three months with new clothes, we demonstrate
-					large performance gains attained using Depth ReID compared to a
-					state-of-the-art Color ReID. Finally, we show further improvements
-					using the temporal attention unit in multi-shot setting.<br><br>
-                                        <img src="proj/depth_reid/depth_reid.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
+					<b>Reinforced Temporal Attention and Split-Rate Transfer for Depth-Based Person Re-Identification.</b> [<a href="./papers/karianakis_Reinforced_Temporal_
+					Attention_ECCV_2018.pdf">paper</a>]<br><br>
+						We address the problem of person re-identification from commodity
+						depth sensors. One challenge for depth-based recognition is data
+						scarcity. Our first contribution addresses this problem by introducing
+						split-rate RGB-to-Depth transfer, which leverages large RGB datasets
+						more effectively than popular fine-tuning approaches. Our transfer scheme
+						is based on the observation that the model parameters at the bottom
+						layers of a deep convolutional neural network can be directly shared
+						between RGB and depth data while the remaining layers need to be
+						fine-tuned rapidly. Our second contribution enhances re-identification
+						for video by implementing temporal attention as a Bernoulli-Sigmoid
+						unit acting upon frame-level features. Since this unit is stochastic, the
+						temporal attention parameters are trained using reinforcement learning.
+						Extensive experiments validate the accuracy of our method in person
+						re-identification from depth sequences. Finally, in a scenario where subjects
+						wear unseen clothes, we show large performance gains compared to
+						a state-of-the-art model which relies on RGB data.<br><br>
+						<img src="proj/depth_reid/depth_reid.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
 
 					<b>An Empirical Evaluation of Current Convolutional Architectures’ Ability to Manage Nuisance Location 
 					and Scale Variability.</b> [<a href="./papers/karianakisDS_CVPR16.pdf">paper</a>, 
