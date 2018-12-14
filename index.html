@@ -100,7 +100,8 @@ Personal Site of Nikolaos Karianakis.
 				<div class="entry">
 					N. Karianakis, Z. Liu, Y. Chen and S. Soatto.<span style="float: right"><mark>NEW</mark></span><br>
 					<b>Reinforced Temporal Attention and Split-Rate Transfer for Depth-Based Person Re-Identification.</b><br>
-					European Conference on Computer Vision (ECCV), September 2018 [<a href="./papers/karianakis_Reinforced_Temporal_Attention_ECCV_2018.pdf">paper</a>]<br><br>
+					European Conference on Computer Vision (ECCV), September 2018 [<a href="./papers/karianakis_Reinforced_Temporal_Attention_ECCV
+					_2018.pdf">paper</a>, <a href="https://karianakis.github.io/proj/reinforced_ta/code.zip">code</a>]<br><br>
 
 					N. Karianakis, J. Dong and S. Soatto.<br>
 					<b>An Empirical Evaluation of Current Convolutional Architectures' Ability to Manage Nuisance Location and Scale Variability.</b><br>
@@ -170,7 +171,7 @@ Personal Site of Nikolaos Karianakis.
 				<hr style="height:2px; visibility:hidden;" />
 				<div class="entry">
 					<b>Reinforced Temporal Attention and Split-Rate Transfer for Depth-Based Person Re-Identification.</b> [<a href="./papers/karianakis_Reinforced_Temporal_
-					Attention_ECCV_2018.pdf">paper</a>]<br><br>
+					Attention_ECCV_2018.pdf">paper</a>, <a href="https://karianakis.github.io/proj/reinforced_ta/code.zip">code</a>]<br><br>
 						We address the problem of person re-identification from commodity
 						depth sensors. One challenge for depth-based recognition is data
 						scarcity. Our first contribution addresses this problem by introducing
@@ -193,68 +194,68 @@ Personal Site of Nikolaos Karianakis.
 					and Scale Variability.</b> [<a href="./papers/karianakisDS_CVPR16.pdf">paper</a>, 
 					<a href="https://karianakis.github.io/proj/cnn_nuisances/">project</a>,
 					<a href="https://karianakis.github.io/proj/cnn_nuisances/code.zip">code</a>]<br><br>
-					We conduct an empirical study to test the ability of convolutional neural networks (CNNs)
-					to reduce the effects of nuisance transformations of the input data, such as location, scale 
-					and aspect ratio. We isolate factors by adopting a common convolutional architecture either 
-					deployed globally on the image to compute class posterior distributions, or restricted locally 
-					to compute class conditional distributions given location, scale and aspect ratios of bounding 
-					boxes determined by proposal heuristics. In theory, averaging the latter should yield inferior 
-					performance compared to proper marginalization. Yet empirical evidence suggests the converse, 
-					leading us to conclude that – at the current level of complexity of convolutional architectures 
-					and scale of the data sets used to train them – CNNs are not very effective at marginalizing 
-					nuisance variability. We also quantify the effects of context on the overall classification task 
-					and its impact on the performance of CNNs, and propose improved sampling techniques for heuristic 
-					proposal schemes that improve end-to-end performance to state-of-the-art levels. We test our 
-					hypothesis on a classification task using the ImageNet benchmark and on a wide-baseline 
-					matching task using the Oxford and Fischer’s datasets.<br><br>
-					<img src="proj/cnn_nuisances/alexNet-entropy_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
+						We conduct an empirical study to test the ability of convolutional neural networks (CNNs)
+						to reduce the effects of nuisance transformations of the input data, such as location, scale 
+						and aspect ratio. We isolate factors by adopting a common convolutional architecture either 
+						deployed globally on the image to compute class posterior distributions, or restricted locally 
+						to compute class conditional distributions given location, scale and aspect ratios of bounding 
+						boxes determined by proposal heuristics. In theory, averaging the latter should yield inferior 
+						performance compared to proper marginalization. Yet empirical evidence suggests the converse, 
+						leading us to conclude that – at the current level of complexity of convolutional architectures 
+						and scale of the data sets used to train them – CNNs are not very effective at marginalizing 
+						nuisance variability. We also quantify the effects of context on the overall classification task 
+						and its impact on the performance of CNNs, and propose improved sampling techniques for heuristic 
+						proposal schemes that improve end-to-end performance to state-of-the-art levels. We test our 
+						hypothesis on a classification task using the ImageNet benchmark and on a wide-baseline 
+						matching task using the Oxford and Fischer’s datasets.<br><br>
+						<img src="proj/cnn_nuisances/alexNet-entropy_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
 
 					<b>Boosting Convolutional Features for Robust Object Proposals.</b> [<a href="./papers/boosting.pdf">paper</a>]<br><br>
-			                We present a method to generate object proposals, in the form of bounding boxes in a test image, to be fed to a 
-					classifier such as a convolutional neural network (CNN), in order to reduce test time complexity of object detection 
-					and classification. We leverage on filters learned in the lower layers of CNNs to design a binary boosting classifier 
-					and a linear regressor to discard as many windows as possible that are unlikely to contain objects of interest. We 
-					test our method against competing proposal schemes, and end-to-end on the Imagenet detection challenge. We show 
-					state-of-the-art performance when at least 1000 proposals per frame are used, at a manageable computational 
-					complexity compared to alternate schemes that make heavier use of low-level image processing.<br><br>
-					<img src="images/boosting_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
+						We present a method to generate object proposals, in the form of bounding boxes in a test image, to be fed to a 
+						classifier such as a convolutional neural network (CNN), in order to reduce test time complexity of object detection 
+						and classification. We leverage on filters learned in the lower layers of CNNs to design a binary boosting classifier 
+						and a linear regressor to discard as many windows as possible that are unlikely to contain objects of interest. We 
+						test our method against competing proposal schemes, and end-to-end on the Imagenet detection challenge. We show 
+						state-of-the-art performance when at least 1000 proposals per frame are used, at a manageable computational 
+						complexity compared to alternate schemes that make heavier use of low-level image processing.<br><br>
+						<img src="images/boosting_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
 
 					<b>Learning to Discriminate in the Wild: Representation-Learning Network for Nuisance-Invariant Image Comparison.</b>
 					[<a href="./papers/TR_130023.pdf">paper</a>]<br><br>
-					We test the hypothesis that a representation-learning architecture can train away the nuisance variability present in images,
-					owing to noise and changes of viewpoint and illumination. First, we establish the simplest possible classification task, a
-					binary classification with no intrinsic variability, which amounts to the determination of co-visibility from different images
-					of the same underlying scene. This is the Occlusion Detection problem and the data are typically two sequential, but not
-					necessarily consecutive or in order, video frames. Our network, based on the Gated Restricted Boltzmann machine (Gated
-					RBM), learns away the nuisance variability appearing on the background scene and the occluder, which are irrelevant with
-					occlusions, and in turn is capable of discriminating between co-visible and occluded areas by thresholding a one-dimensional
-					semi-metric. Our method, combined with Superpixels, outperforms algorithms using features specifically engineered for
-					occlusion detection, such as optical flow, appearance, texture and boundaries. We further challenge our framework with
-					another Computer Vision problem, Image Segmentation from a single frame. We cast it as binary classification too, but
-					here we also have to deal with the intrinsic variability of the scene objects. We perform boundary detection according to a
-					similarity map for all pairs of patches and finally provide a semantic image segmentation by leveraging Normalized Cuts.<br><br>
-					<img src="images/occlusions_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
+						We test the hypothesis that a representation-learning architecture can train away the nuisance variability present in images,
+						owing to noise and changes of viewpoint and illumination. First, we establish the simplest possible classification task, a
+						binary classification with no intrinsic variability, which amounts to the determination of co-visibility from different images
+						of the same underlying scene. This is the Occlusion Detection problem and the data are typically two sequential, but not
+						necessarily consecutive or in order, video frames. Our network, based on the Gated Restricted Boltzmann machine (Gated
+						RBM), learns away the nuisance variability appearing on the background scene and the occluder, which are irrelevant with
+						occlusions, and in turn is capable of discriminating between co-visible and occluded areas by thresholding a one-dimensional
+						semi-metric. Our method, combined with Superpixels, outperforms algorithms using features specifically engineered for
+						occlusion detection, such as optical flow, appearance, texture and boundaries. We further challenge our framework with
+						another Computer Vision problem, Image Segmentation from a single frame. We cast it as binary classification too, but
+						here we also have to deal with the intrinsic variability of the scene objects. We perform boundary detection according to a
+						similarity map for all pairs of patches and finally provide a semantic image segmentation by leveraging Normalized Cuts.<br><br>
+						<img src="images/occlusions_width620px.png" /><br><br><hr style="border-top: dotted 1px;" /><br>
 
 					<b>An Integrated System for Digital Restoration of Prehistoric Theran Wall Paintings.</b>
 					[<a href="./papers/DSP13_paper.pdf">paper</a>]<br><br>
-					We present a computer vision system for robust
-					restoration of prehistoric Theran wall paintings, replacing or
-					just supporting the work of a specialist. In the case of significant
-					information loss on some areas of murals, the local inpainting
-					methods are not sufficient for satisfactory restoration. Our
-					strategy is to detect an area of relevant semantics, geometry and
-					color in another location of the wall paintings, which in turn
-					is stitched into the missing area by applying a seamless image
-					stitching algorithm. An important part of our digital restoration
-					system is the damaged and missing areas detector. It is used in
-					combination with total variation inpainting at first for the missing
-					area extraction and repair, and secondly for the elimination of
-					minor defects on the retrieved part in the non-local inpainting
-					mechanism. We propose a morphological algorithm for rough
-					detection and we improve upon this approach by incorporating
-					edge information. For missing areas with complicated boundaries
-					we enhance the detection by using iterated graph cuts.<br><br>
-					<img src="images/thera_width620px.png" /><br><br><hr style="border-top: dotted 1px;" />
+						We present a computer vision system for robust
+						restoration of prehistoric Theran wall paintings, replacing or
+						just supporting the work of a specialist. In the case of significant
+						information loss on some areas of murals, the local inpainting
+						methods are not sufficient for satisfactory restoration. Our
+						strategy is to detect an area of relevant semantics, geometry and
+						color in another location of the wall paintings, which in turn
+						is stitched into the missing area by applying a seamless image
+						stitching algorithm. An important part of our digital restoration
+						system is the damaged and missing areas detector. It is used in
+						combination with total variation inpainting at first for the missing
+						area extraction and repair, and secondly for the elimination of
+						minor defects on the retrieved part in the non-local inpainting
+						mechanism. We propose a morphological algorithm for rough
+						detection and we improve upon this approach by incorporating
+						edge information. For missing areas with complicated boundaries
+						we enhance the detection by using iterated graph cuts.<br><br>
+						<img src="images/thera_width620px.png" /><br><br><hr style="border-top: dotted 1px;" />
 				</div>
 			</div>
 
